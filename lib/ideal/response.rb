@@ -142,7 +142,7 @@ module Ideal
     private
 
     def error_occured?
-      @response.name == 'ErrorRes'
+      @response.name == 'ErrorRes' || @response.name == 'AcquirerErrorRes'
     end
 
     def text(path)
